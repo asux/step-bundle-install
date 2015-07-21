@@ -38,6 +38,10 @@ The MIT License (MIT)
 
 # Changelog
 
+## 1.1.5
+
+- Use `wercker/default` box
+
 ## 1.1.4
 
 - Added properties and wercker.yml
