@@ -45,7 +45,9 @@ if [ "$WERCKER_BUNDLE_INSTALL_FROZEN" = "true" ] ; then
 fi
 
 if [ -n "$WERCKER_BUNDLE_INSTALL_JOBS" ] ; then
-    bundle_command="$bundle_command --jobs=$WERCKER_BUNDLE_INSTALL_JOBS"
+    if [ "$WERCKER_BUNDLE_INSTALL_JOBS" -gt 0 ] ; then
+        bundle_command="$bundle_command --jobs=$WERCKER_BUNDLE_INSTALL_JOBS"
+    fi
 fi
 
 if [ -z "$WERCKER_BUNDLE_INSTALL_VERSION" ] ; then

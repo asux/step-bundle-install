@@ -1,5 +1,5 @@
 name: bundle-install
-version: 1.1.7
+version: 1.1.8
 description: bundle-install step
 properties:
   path:
@@ -34,7 +34,7 @@ properties:
     required: false
   jobs:
     type: string
-    default: 4
+    default: 8
     required: false
   version:
     type: string
