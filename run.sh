@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 bundle_command="bundle install"
 gemfile_name="Gemfile"
 

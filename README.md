@@ -38,6 +38,10 @@ The MIT License (MIT)
 
 # Changelog
 
+## 1.1.7
+
+- Default value for jobs is 4
+
 ## 1.1.6
 
 - Don't check jobs option
