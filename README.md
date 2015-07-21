@@ -38,6 +38,10 @@ The MIT License (MIT)
 
 # Changelog
 
+## 1.1.4
+
+- Added properties and wercker.yml
+
 ## 1.1.3
 
 - Add `gemfile` option
