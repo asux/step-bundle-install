@@ -38,6 +38,10 @@ The MIT License (MIT)
 
 # Changelog
 
+## 1.1.6
+
+- Don't check jobs option
+
 ## 1.1.5
 
 - Use `wercker/default` box

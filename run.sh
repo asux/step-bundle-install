@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 bundle_command="bundle install"
 gemfile_name="Gemfile"
 
@@ -45,9 +45,7 @@ if [ "$WERCKER_BUNDLE_INSTALL_FROZEN" = "true" ] ; then
 fi
 
 if [ -n "$WERCKER_BUNDLE_INSTALL_JOBS" ] ; then
-    if [ "$WERCKER_BUNDLE_INSTALL_JOBS" -gt 0 ] ; then
-        bundle_command="$bundle_command --jobs=$WERCKER_BUNDLE_INSTALL_JOBS"
-    fi
+    bundle_command="$bundle_command --jobs=$WERCKER_BUNDLE_INSTALL_JOBS"
 fi
 
 if [ -z "$WERCKER_BUNDLE_INSTALL_VERSION" ] ; then
@@ -79,7 +77,7 @@ install_bundler() {
 }
 
 if [ ! -e "$PWD/$gemfile_name" ]; then
-    info "Skipping bundle install because Gemfile not found in $PWD";
+    info "Skipping bundle install because $gemfile_name not found in $PWD";
 else
     info 'Gemfile found. Start bundle install.';
 
